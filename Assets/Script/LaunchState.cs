@@ -36,7 +36,7 @@ public class LaunchState : State<BallPerformer>
         Debug.Log("LAUNCH!!!");
         StickActions.instance.SetEnable(false);
         float speed = _owner.getSpeed();
-        float power = _owner.power;
+        float power = _owner._setting.Power;
         Rigidbody _rb = _owner.getRigidbody();
         _rb.AddForce(new Vector3(0, speed, 0) * power );
         

@@ -75,9 +75,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a45173494d4f2479a532032fdd5704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _setting: {fileID: 11400000, guid: e2ef854deb8ccbc4ca7fef1b9776f364, type: 2}
   transformToRotate: {fileID: 249879896961236820}
-  sens: 10
-  power: 49
 --- !u!1001 &3567978640203783107
 PrefabInstance:
   m_ObjectHideFlags: 0

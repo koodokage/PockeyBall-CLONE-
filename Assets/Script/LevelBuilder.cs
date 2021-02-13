@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+namespace LevelBuilder { 
 
 public class LevelBuilder : MonoBehaviour
 {
+    [SerializeField] private LevelSetting _setting;
     [SerializeField] private GameObject[] _ball;
     [SerializeField] private GameObject[] _towerPart;
     [SerializeField] private List<GameObject> _pointBlock;
@@ -18,17 +20,8 @@ public class LevelBuilder : MonoBehaviour
     int towerRandom;
     int ballRandom;
     int pointBlockRandom;
-    public int space;
-
-
-    [Header("Size")]
-    public int towerSize = 10;
-    public int blockSize = 30;
-
-    [Header("Position")]
-    [Range(0, 255)]
-    public int lastBlockPos;
-    private int min = 15;
+ 
+    
 
     private void Start()
     {
@@ -39,32 +32,32 @@ public class LevelBuilder : MonoBehaviour
         Instantiate(_stick, _locationStick.position, Quaternion.Euler(0,90,0));
         Vector3 posBlock = _locationBlock.localPosition;
         Vector3 posTower = _locationTower.localPosition;
-        for (int i = 0; i<=towerSize; i++)
+        for (int i = 0; i<=_setting.TowerSize; i++)
         {      
             _locationTower.transform.position = new Vector3(posTower.x, posTower.y, posTower.z);
             Instantiate(_towerPart[towerRandom], _locationTower.transform.position,Quaternion.identity);
             var pos = _locationTower.position.y;
-            if (pos < lastBlockPos)
+            if (pos < _setting.LastBlock)
             {
-                towerSize++;
+                _setting.TowerSize++;
             }
-            posTower.y += space;
+            posTower.y += _setting.Seperate;
         }
 
-        for (int i = 0; i <= blockSize; i++)
+        for (int i = 0; i <= _setting.BlockSize; i++)
         {
-            blockRandom = Random.Range(min, lastBlockPos);
+            blockRandom = Random.Range(_setting.MinPos, _setting.LastBlock);
             posBlock.y = blockRandom;
             _locationBlock.transform.position = new Vector3(posBlock.x, posBlock.y, posBlock.z);
             Instantiate(_block, _locationBlock.transform.position,Quaternion.identity);
         }
 
-        Instantiate(_finish, new Vector3(0.7f, lastBlockPos + 10, 0),Quaternion.Euler(0,90,0));
+        Instantiate(_finish, new Vector3(0.7f, _setting.LastBlock + _setting.FinishLine, 0),Quaternion.Euler(0,90,0));
         
         while (_pointBlock.Count >0) 
         {
             pointBlockRandom = Random.Range(0, _pointBlock.Count);
-            Instantiate(_pointBlock[pointBlockRandom], new Vector3(0,(lastBlockPos+15)+_pointBlock.Count*4, 0), Quaternion.identity);
+            Instantiate(_pointBlock[pointBlockRandom], new Vector3(0,(_setting.LastBlock + _setting.PointBlock)+_pointBlock.Count*4, 0), Quaternion.identity);
             _pointBlock.RemoveAt(pointBlockRandom);
            
         }
@@ -72,4 +65,5 @@ public class LevelBuilder : MonoBehaviour
 
     }
 
+}
 }

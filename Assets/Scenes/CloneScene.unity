@@ -509,12 +509,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005641e602a61a146a51a684b0d7d2b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _setting: {fileID: 11400000, guid: 3aa05e639f5d77940b97824afd723286, type: 2}
   _ball:
   - {fileID: 745108805019511160, guid: 52e04bbbdd06bad43b0dd65c68343a64, type: 3}
-  - {fileID: 745108805019511160, guid: 52e04bbbdd06bad43b0dd65c68343a64, type: 3}
+  - {fileID: 4647795993043370086, guid: 604869a1f12a999469ba9272f62c09b0, type: 3}
+  - {fileID: 2468170113611537797, guid: eb3f4b5147fdb1b45a48f71b745cf763, type: 3}
   _towerPart:
   - {fileID: 8594551654012975650, guid: ea118443a5a87c44aa4af85ca182c378, type: 3}
   - {fileID: 3472996350241420298, guid: 50321a7136b13e24db95d523d772ce93, type: 3}
+  - {fileID: 6862025919440171384, guid: 96ffd0f0942d7824095caf5c74acd697, type: 3}
+  - {fileID: 1803499946310330371, guid: 9d4596989dddb84498fd012820b0de35, type: 3}
   _pointBlock:
   - {fileID: 3950784718249946257, guid: eacb7790aa7d7ee45928c26524112508, type: 3}
   - {fileID: 4213293724652203493, guid: 72f300cd24e3e744f8671670c50effdd, type: 3}
@@ -527,10 +531,6 @@ MonoBehaviour:
   _locationBlock: {fileID: 1673896163}
   _locationBall: {fileID: 1548690933}
   _locationStick: {fileID: 2015006398}
-  space: 2
-  towerSize: 20
-  blockSize: 30
-  lastBlockPos: 87
 --- !u!1 &2112556399
 GameObject:
   m_ObjectHideFlags: 0

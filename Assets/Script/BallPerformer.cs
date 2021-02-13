@@ -4,17 +4,13 @@ using StateStuff;
 
 public class BallPerformer : MonoBehaviour
 {
+    [SerializeField] public BallSettings _setting;
     [SerializeField] private Transform transformToRotate;
     private bool switchState,isShoot;
     private Rigidbody _rb;
     private float _speed,_firstAim, _lastAim;
     private Vector2 currentRot;
-  
 
-    [Range(5, 20)]
-    public float sens = 10;
-    [Range(10,200)]
-    public float power;
     public StateMachine<BallPerformer> StateMachine { get; set; }
 
     private void Start()
@@ -84,7 +80,7 @@ public class BallPerformer : MonoBehaviour
             {
                 if (_rb.velocity.magnitude == 0)
                 {
-                    currentRot.x += Input.GetAxis("Mouse Y") * sens;
+                    currentRot.x += Input.GetAxis("Mouse Y") * _setting.Sensivity;
                     currentRot.x = Mathf.Clamp(currentRot.x, -34f, 0f);
                     transform.rotation = Quaternion.Euler(0, 0, currentRot.x);
 
