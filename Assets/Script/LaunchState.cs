@@ -33,7 +33,7 @@ public class LaunchState : State<BallPerformer>
 
     public override void EnterState(BallPerformer _owner)
     {
-        Debug.Log("LAUNCH!!!");
+       
         StickActions.instance.SetEnable(false);
         float speed = _owner.getSpeed();
         float power = _owner._setting.Power;
