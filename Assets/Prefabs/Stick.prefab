@@ -78,8 +78,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mesh: {fileID: 3498140493608987053}
   col: {fileID: 1491774846506643254}
+  triggerList: []
   mOffset: {x: 0.44, y: 0, z: 0}
-  close: 1
 --- !u!114 &4379073453103476627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,10 +104,60 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1491774846506643248}
     m_Modifications:
+    - target: {fileID: 284238100105545600, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782093354932695205, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876292574881045564, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3042599470706337797, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900977577174257540, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323017630865450241, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432053177355761434, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831419276481180863, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5831419276481180863, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547221911957095585, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571567832452406624, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7340530991509855572, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
         type: 3}
@@ -173,6 +223,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "St\u0131ckofBallRigged"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7968308818729797614, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394522738347800003, guid: 8226edfdc9cf6b0478383fb9dfe1424a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2745763419746720473, guid: 8226edfdc9cf6b0478383fb9dfe1424a, type: 3}

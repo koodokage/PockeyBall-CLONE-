@@ -11,7 +11,7 @@ public class LevelSetting : ScriptableObject
     [Range(0, 255)]
     [SerializeField] private int _min = 15;
     [SerializeField] private int _lastBlock = 85;
-    [SerializeField] private int _seperateTowerParts = 2;
+     private int _seperateTowerParts = 2;
     [Header("Position to Last Block")]
     [SerializeField] private int _finishLine = 10;
     [SerializeField] private int _pointsBlock = 15;

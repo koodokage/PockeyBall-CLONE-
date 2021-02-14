@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e7bd294eb22ffe458a296cc40d70563, type: 3}
   m_Name: DefaultLevel
   m_EditorClassIdentifier: 
-  _towerSize: 290
+  _towerSize: 308
   _blockSize: 185
   _min: 15
   _lastBlock: 188
