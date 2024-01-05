@@ -1,7 +1,7 @@
 # PockeyBall-CLONEGAME-
 Cloning a  hyper casual game -VOODOO-
 
-Hi Developers !  
+-Simple Show Case of Code !  
 ::in this project i will show you :::
 //((the project will be refactored for mobile in the future))
 //((all asset made in unity super sample))
