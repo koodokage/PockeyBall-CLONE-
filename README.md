@@ -1,11 +1,6 @@
-# PockeyBall-CLONEGAME-
-Cloning a  hyper casual game -VOODOO-
-
+# PockeyBall - Show Case
 -Simple Show Case of Code !  
 ::in this project i will show you :::
-//((the project will be refactored for mobile in the future))
-//((all asset made in unity super sample))
-{
 
 1- Bend mesh with create a simple IK
 
@@ -15,10 +10,9 @@ Cloning a  hyper casual game -VOODOO-
 
 4- best way the  random level generator
 
-5- optimized and fast gameplay
+5- optimized gameplay
 
 6- use some patterns clearly
 
 7- creative camera system
 
-}
