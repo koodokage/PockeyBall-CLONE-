@@ -1,6 +1,8 @@
 # PockeyBall - Show Case
+
 -Simple Show Case of Code !  
-::in this project i will show you :::
+
+::In this project i will show you :::
 
 1- Bend mesh with create a simple IK
 
